@@ -23,7 +23,7 @@ const runCommand = (command) => {
 
 const printWelcomeTitle = async () => {
   consola.log("\n\nImagine A Bot...");
-  figlet("Discord.JS", (err, data) => {
+  figlet("Discord.TS", (err, data) => {
     consola.log(gradient.pastel.multiline(data));
   });
   await sleep();
