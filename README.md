@@ -17,8 +17,8 @@
 
 ## Getting Started
 
-To start, run ``npx create-discord-bot``:
+To start, run ``npx create-discordts-bot``:
 
 ```
-npx create-discord-bot
+npx create-discordts-bot
 ```
