@@ -1,0 +1,29 @@
+{
+  "name": "create-discordts-bot",
+  "version": "1.6.0",
+  "description": "CLI for creating discord bot template",
+  "type": "module",
+  "main": "index.js",
+  "bin": "./index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vrkljan/discord.ts"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Evan Vrkljan",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "consola": "^2.15.3",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.0",
+    "sanitize-filename": "^1.6.3",
+    "valid-filename": "^4.0.0"
+  }
+}
