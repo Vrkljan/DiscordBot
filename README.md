@@ -4,7 +4,7 @@
 </p>
 
 <h3 align="center">
-  A Discord Bot Framework powered by Discord.JS in Typescript
+  A Discord Bot Framework powered by Discord.JS
 </h3>
 
 <hr/>
