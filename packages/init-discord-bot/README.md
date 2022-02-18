@@ -1,9 +1,11 @@
 <p align="center">
-  <img src="https://github.com/Vrkljan/discord.ts/blob/8e432c90880b0be0df196acf93a5b90649e0b928/images/discordts2.PNG" alt="Discord.TS Banner"  >
+  <img src="../../assets/discordbot.PNG" alt="DiscordBot Banner"  >
 </p>
 
 <h3 align="center">
-  A Discord Bot Framework powered by Discord.JS
+  Init-Discord-Bot CLI
 </h3>
 
 <hr/>
+
+<p align="center" >This CLI tool helps users init projects for DiscordBot using npx</p>
