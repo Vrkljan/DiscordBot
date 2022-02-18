@@ -1,0 +1,25 @@
+{
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/glob": "^7",
+    "@types/node": "^16.4.6",
+    "ts-node": "^10.1.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.10.1",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@discordjs/rest": "^0.2.0-canary.0",
+    "consola": "^2.15.3",
+    "discord-api-types": "^0.27.2",
+    "discord-bot-app": "^1.0.0",
+    "discord.js": "^13.0.1",
+    "dotenv": "^10.0.0",
+    "envy": "^2.0.0",
+    "glob": "^7.2.0"
+  }
+}

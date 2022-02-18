@@ -1,0 +1,33 @@
+{
+  "name": "init-discord-bot",
+  "version": "1.0.0",
+  "description": "CLI that generates a Discord bot 🤖.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "template",
+    "generator",
+    "cli",
+    "command line"
+  ],
+  "author": "Evan Vrkljan",
+  "license": "MIT",
+  "bin": "./index.js",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.0.0",
+    "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vrkljan/discord.ts"
+  }
+}

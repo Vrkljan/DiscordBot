@@ -3,15 +3,14 @@ import { REST } from '@discordjs/rest';
 import { Routes } from 'discord-api-types/v9';
 import { promisify } from 'util';
 import { glob } from 'glob';
-import path, { dirname } from 'path';
+import path from 'path';
 import consola from 'consola';
 import dotenv from 'dotenv';
 dotenv.config();
-
 const globPromise = promisify(glob);
 
 interface Event {
-	(bot: DiscordBot, ...args: any[]): Promise<void>;
+	(client: DiscordBot, ...args: any[]): Promise<void>;
 }
 
 interface Command {
@@ -23,6 +22,7 @@ interface DiscordBotArgs {
 	clientId: string
 	guildId: string
 }
+
 
 class DiscordBot extends Client {
 
@@ -95,18 +95,19 @@ class DiscordBot extends Client {
 		})();
 	}
 
-
 	public constructor(intents: ClientOptions, args: DiscordBotArgs) {
 		super(intents);
 		this.start(args)
 	}
 
 	private async start(args: DiscordBotArgs) {
-		await this.setCommands(await globPromise(`${dirname(require.main.filename)}/commands/**/*{.ts,.js}`));
-		await this.setEvents(await globPromise(`${dirname(require.main.filename)}/events/**/*{.ts,.js}`));
-		await this.setSlashCommands(await globPromise(`${dirname(require.main.filename)}/interactions/**/*{.ts,.js}`), args);
+		await this.setCommands(await globPromise(`${process.cwd()}/src/commands/**/*{.ts,.js}`));
+		await this.setEvents(await globPromise(`${process.cwd()}/src/events/**/*{.ts,.js}`));
+		await this.setSlashCommands(await globPromise(`${process.cwd()}/src/interactions/**/*{.ts,.js}`), args);
 		this.login(args.token)
 	}
 }
+
+
 
 export default DiscordBot;
