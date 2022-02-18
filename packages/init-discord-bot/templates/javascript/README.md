@@ -1,9 +1,14 @@
-<p align="center">
-  <img src="https://github.com/Vrkljan/discord.ts/blob/8e432c90880b0be0df196acf93a5b90649e0b928/images/discordts2.PNG" alt="Discord.TS Banner"  >
-</p>
+## Getting Started with DiscordBot
 
-<h3 align="center">
-  A Discord Bot Framework powered by Discord.JS
-</h3>
+Install Dependencies
+```
+npm install
+```
 
-<hr/>
+Make sure you as well change the ``.env.example`` to just ``.env`` and populate the varibles inside:
+```
+BOT_TOKEN = <Your Discord Bot Token>
+DISCORD_CLIENT_ID = <Your Discord Client ID>
+DISCORD_GUILD_ID = <Your Discord Guild/Server ID you are doing development in>
+NODE_ENV = development
+```
