@@ -21,7 +21,7 @@ const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function displayBanner() {
   console.log("\nImagine A Bot...");
-  figlet.text(`Discord.JS`, { font: "Larry 3D" }, (err, data) => {
+  figlet.text(`DiscordBot`, { font: "Larry 3D" }, (err, data) => {
     console.log(gradient.teen.multiline(data));
   });
   await sleep(100);
