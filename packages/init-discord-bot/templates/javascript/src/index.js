@@ -1,4 +1,4 @@
-const DiscordBot = require("discord-ts-bot");
+const DiscordBot = require("discord-bot-app");
 const { Intents } = require("discord.js");
 
 const intents = {

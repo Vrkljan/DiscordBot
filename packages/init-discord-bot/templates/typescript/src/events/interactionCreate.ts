@@ -1,4 +1,4 @@
-import DiscordBot from "discord-ts-bot";
+import DiscordBot from "discord-bot-app";
 import { CommandInteraction } from "discord.js";
 
 export default async (client: DiscordBot, int: CommandInteraction) => {

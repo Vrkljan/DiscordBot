@@ -1,4 +1,4 @@
-import DiscordBot from 'discord-ts-bot';
+import DiscordBot from 'discord-bot-app';
 import { Intents, ClientOptions } from 'discord.js';
 
 const intents: ClientOptions = {
