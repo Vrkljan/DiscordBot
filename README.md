@@ -18,10 +18,10 @@
 
 ## Getting Started
 
-To start, run ``npx init-discord-bot`` to generate a project:
+To start, run ``npx init-discord-bot@latest`` to generate a project:
 
 ```
-npx init-discord-bot
+npx init-discord-bot@latest
 ```
 
 After you have cloned the project, you need to cd and install the dependencies:
